@@ -3,3 +3,13 @@
   color:aliceblue;
   min-height: 100vh;
 }
+
+#Editor-Card {
+  background-color: #1c2e4a;
+  height: 85vh;
+}
+
+#Preview-Card {
+  background-color: #22395d;
+  height: 85vh;
+}
