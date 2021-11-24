@@ -12,6 +12,7 @@
 #Preview-Card {
   background-color: #22395d;
   height: 85vh;
+  overflow: scroll;
 }
 
 #editor {
