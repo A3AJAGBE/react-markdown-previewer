@@ -65,7 +65,7 @@ class App extends React.Component {
                             <Card id="Editor-Card">
                                 <Card.Header> <h2>Editor</h2> </Card.Header>
                                 <Card.Body>
-                                    <textarea className="p-4" id="editor" placeholder={this.state.markdown} onChange={this.handleChange}></textarea>
+                                    <textarea className="p-4" id="editor" value={this.state.markdown} onChange={this.handleChange}></textarea>
                                 </Card.Body>
                             </Card>
                         </Col>
