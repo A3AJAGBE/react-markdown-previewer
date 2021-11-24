@@ -16,6 +16,16 @@ class App extends React.Component {
         this.state = {
             markdown: ""
         };
+        
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({markdown: event.target.value});
+    }
+
+    updateMarkdown(markdown) {
+        this.setState({ markdown });
     }
 
     render() {
@@ -31,7 +41,7 @@ class App extends React.Component {
                             <Card id="Editor-Card">
                                 <Card.Header> <h2>Editor</h2> </Card.Header>
                                 <Card.Body>
-                                    <textarea id="editor" placeholder={PLACEHOLDER} className="p-4"></textarea>
+                                    <textarea className="p-4" id="editor" placeholder={this.state.markdown} onChange={this.handleChange}></textarea>
                                 </Card.Body>
                             </Card>
                         </Col>
