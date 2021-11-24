@@ -13,3 +13,7 @@
   background-color: #22395d;
   height: 85vh;
 }
+
+#editor {
+  resize: none;
+}
