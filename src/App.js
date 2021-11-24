@@ -7,7 +7,34 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
 import { marked } from 'marked';
 
- const PLACEHOLDER = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a volutpat urna. Suspendisse quis ex felis. Praesent ultrices posuere dolor, ac ultrices massa suscipit sed. Donec ornare congue ligula in gravida. Ut sollicitudin euismod ligula iaculis vulputate. Nullam non diam ut augue convallis varius quis vitae elit. Maecenas finibus, sapien sit amet accumsan sodales, nisi massa imperdiet metus, ac tincidunt lacus odio in est. Sed vel ultrices augue, nec egestas dolor. Integer vitae porta urna. Cras quis dapibus libero. Sed eget facilisis elit. Donec luctus, elit non aliquam volutpat, nisi nulla accumsan diam, nec placerat leo mauris vel velit. Morbi ac fringilla lectus. Maecenas porttitor sapien elit, id aliquet metus porttitor at. Donec et sapien eu velit vulputate gravida quis ac nibh. Quisque nec eros nec libero tempor ultricies. Aliquam erat volutpat. Nam ipsum magna, mollis a dignissim tristique, scelerisque ac libero. Aliquam erat volutpat. Sed posuere est dui, vel semper lacus posuere at. Etiam nec tincidunt ipsum. Etiam congue magna quis dignissim mollis. Fusce aliquet vehicula volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a volutpat urna. Suspendisse quis ex felis. Praesent ultrices posuere dolor, ac ultrices massa suscipit sed. Donec ornare congue ligula in gravida. Ut sollicitudin euismod ligula iaculis vulputate. Nullam non diam ut augue convallis varius quis vitae elit. Maecenas finibus, sapien sit amet accumsan sodales, nisi massa imperdiet metus, ac tincidunt lacus odio in est. Sed vel ultrices augue, nec egestas dolor. Integer vitae porta urna. Cras quis dapibus libero. Sed eget facilisis elit. Donec luctus, elit non aliquam volutpat, nisi nulla accumsan diam, nec placerat leo mauris vel velit. Morbi ac fringilla lectus. Maecenas porttitor sapien elit, id aliquet metus porttitor at. Donec et sapien eu velit vulputate gravida quis ac nibh. Quisque nec eros nec libero tempor ultricies. Aliquam erat volutpat. Nam ipsum magna, mollis a dignissim tristique, scelerisque ac libero. Aliquam erat volutpat. Sed posuere est dui, vel semper lacus posuere at. Etiam nec tincidunt ipsum. Etiam congue magna quis dignissim mollis. Fusce aliquet vehicula volutpat.";
+const PLACEHOLDER = `**This is an example of a bold text**
+
+# Default previewer text
+
+## This is heading 2 (Sub-heading)
+
+[FCC Learn](https://www.example.com) 
+
+Example of inline code: \` <p> Hello World</p> \`
+
+\`\`\` 
+// Example of Code block: 
+const profile = {
+    name: 'Aminat', 
+    stack: 'Full Stack Dev'
+    }  
+\`\`\`
+
+// List item
+1. code 
+2. Run 
+3. Debug
+
+> Block Quotes
+
+![A3 Logo](https://raw.githubusercontent.com/A3AJAGBE/MyPortfolio/main/portfolio/static/images/A3.png?token=AGRFJCC3T6DKWGCBEPYPQFTBU7WIQ)
+
+`;
 
 class App extends React.Component {
 
@@ -15,7 +42,7 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            markdown: ""
+            markdown: PLACEHOLDER,
         };
         
         this.handleChange = this.handleChange.bind(this);
