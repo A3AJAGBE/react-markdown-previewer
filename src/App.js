@@ -6,10 +6,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
 import { marked } from 'marked';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faFileCode } from '@fortawesome/free-solid-svg-icons';
 
 marked.setOptions({
     breaks: true
 });
+
+const EDIT = <FontAwesomeIcon icon={faCode} />
+const PREVIEW = <FontAwesomeIcon icon={faFileCode} />
 
 const PLACEHOLDER = `**This is an example of a bold text**
 
@@ -67,7 +72,7 @@ class App extends React.Component {
                     <Row xs={1} md={2} className="g-4" id="MP-Row">
                         <Col>
                             <Card id="Editor-Card">
-                                <Card.Header> <h2>Editor</h2> </Card.Header>
+                                <Card.Header> <h2> {EDIT} Editor</h2> </Card.Header>
                                 <Card.Body>
                                     <textarea className="p-4" id="editor" value={this.state.markdown} onChange={this.handleChange}></textarea>
                                 </Card.Body>
@@ -75,8 +80,8 @@ class App extends React.Component {
                         </Col>
                         <Col>
                             <Card id="Preview-Card">
-                                <Card.Header> <h2>Preview</h2> </Card.Header>
-                                <Card.Body id="preview"  dangerouslySetInnerHTML={{
+                                <Card.Header> <h2> {PREVIEW} Preview</h2> </Card.Header>
+                                <Card.Body className="Preview-scroll" id="preview"  dangerouslySetInnerHTML={{
                                             __html: marked(this.state.markdown),}}>
                                 
                                 </Card.Body>
