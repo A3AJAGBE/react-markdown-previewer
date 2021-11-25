@@ -9,12 +9,15 @@
   height: 85vh;
 }
 
+#editor {
+  resize: none;
+}
+
 #Preview-Card {
   background-color: #22395d;
   height: 85vh;
-  overflow: scroll;
 }
 
-#editor {
-  resize: none;
+.Preview-scroll {
+  overflow: scroll;
 }
