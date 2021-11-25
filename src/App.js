@@ -20,9 +20,9 @@ const PLACEHOLDER = `**This is an example of a bold text**
 
 # Default previewer text
 
-## This is heading 2 (Sub-heading)
+## React Markdown Live Preview (Sub-heading)
 
-[FCC Learn](https://www.example.com) 
+If you are not familiar with markdown, here is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 Example of inline code: \` <p> Hello World <br /> </p> \`
 
@@ -39,9 +39,9 @@ const profile = {
 2. Run 
 3. Debug
 
-> Block Quotes
+> When life gives you lemons, make grape juice, then sit back and let people wonder how you did it.  - Priyanka Chopra
 
-![A3 Logo](https://raw.githubusercontent.com/A3AJAGBE/MyPortfolio/main/portfolio/static/images/A3.png?token=AGRFJCC3T6DKWGCBEPYPQFTBU7WIQ)
+![A3 Logo](https://raw.githubusercontent.com/A3AJAGBE/react-markdown-previewer/main/public/logo192.png)
 
 `;
 
