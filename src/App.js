@@ -7,6 +7,10 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
 import { marked } from 'marked';
 
+marked.setOptions({
+    breaks: true
+});
+
 const PLACEHOLDER = `**This is an example of a bold text**
 
 # Default previewer text
@@ -15,7 +19,7 @@ const PLACEHOLDER = `**This is an example of a bold text**
 
 [FCC Learn](https://www.example.com) 
 
-Example of inline code: \` <p> Hello World</p> \`
+Example of inline code: \` <p> Hello World <br /> </p> \`
 
 \`\`\` 
 // Example of Code block: 
