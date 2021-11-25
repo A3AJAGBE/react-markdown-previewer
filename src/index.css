@@ -13,3 +13,15 @@ textarea {
   background-color:#6a8ec8;
   color:aliceblue;
 }
+
+code {
+  background-color: #34568B;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+}
+
+blockquote {
+  border-left: 3px solid #6a8ec8;
+  color: #6a8ec8;
+  padding-left: 10px;
+}
